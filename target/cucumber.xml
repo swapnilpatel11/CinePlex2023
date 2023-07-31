@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="44.122" tests="6" skipped="0" failures="0" errors="0">
+<testcase classname="Test Search Functionality to find movie by name" name="Search Movie name" time="11.591">
+<system-out><![CDATA[
+Given User should launch application........................................passed
+When User enter movie name and click enter..................................passed
+Then User should get result according to data enter.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test Search Functionality to find movie by name" name="Get Movie Genre of search result" time="9.672">
+<system-out><![CDATA[
+Given User should launch application........................................passed
+And User enter movie name and click enter...................................passed
+And User should get result according to data enter..........................passed
+When User click on first result of movie show times.........................passed
+Then User should be able to see Genre.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test Login functionality for invalid credentials" name="User cannot login with invalid credentials" time="5.165">
+<system-out><![CDATA[
+Given User should launch application........................................passed
+And User click on Account button............................................passed
+And User click on Login button..............................................passed
+When User enter invalid email and password..................................passed
+Then User should not able to login into account.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test send a gift card price on gift card page" name="User should able to check amount" time="7.69">
+<system-out><![CDATA[
+Given User should launch application........................................passed
+And User click on Menu......................................................passed
+And User click on Gift Cards................................................passed
+And User reach on Gift cards page...........................................passed
+And User click on Send an E-Gift Card button................................passed
+When User enter all Value , Qauntity,Message, Recipient Name,Email on page..passed
+And User click on Add to Cart button........................................passed
+Then User should able to see total amount of gift card......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test footer link Cineplex Digital Media http status code" name="Validate status code of Cineplex Digital Media link" time="3.075">
+<system-out><![CDATA[
+Given User should launch application........................................passed
+When User should check http status code for Cineplex Digital Media..........passed
+Then http status code validation it should not be broken link...............passed
+]]></system-out>
+</testcase>
+<testcase classname="Test Food and Drink page for order food to validate combo name,price,items,calories,serves" name="User should be able to see Combo Name,Price,Items,Calories and Serves" time="6.642">
+<system-out><![CDATA[
+Given User should launch application........................................passed
+And User click on Menu......................................................passed
+And User click on food & drink button.......................................passed
+And User reach to food & drink page.........................................passed
+And User click on order now button..........................................passed
+And User reach on order now page............................................passed
+When User select mobile pick up location from dropdown......................passed
+And User click on view menu.................................................passed
+And User reach on food menu page............................................passed
+And User click on combo three...............................................passed
+Then User should be able see Combo Name, Price,Items, Calories and Serves...passed
+]]></system-out>
+</testcase>
+</testsuite>
